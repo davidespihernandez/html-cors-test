@@ -5,7 +5,7 @@
         myHeaders.append("accept", "application/vnd.postman.v2+json");
         myHeaders.append("content-type", "application/x-www-form-urlencoded; charset=UTF-8");
         myHeaders.append("origin", "null");
-
+        myHeaders.append("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36");
         var requestOptions = {
             method: 'GET',
             headers: myHeaders,
@@ -19,6 +19,6 @@
     </script>
 </head>
 <body>
-<div>Test page calling without all headers</div>
+<div>Test page calling with user-agent headers</div>
 </body>
 </html>
