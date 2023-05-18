@@ -2,10 +2,17 @@
 <head>
     <script>
         var myHeaders = new Headers();
+        myHeaders.append("authority", "api.getpostman-beta.com");
         myHeaders.append("accept", "application/vnd.postman.v2+json");
+        myHeaders.append("accept-language", "en-GB,en-US;q=0.9,en;q=0.8");
         myHeaders.append("content-type", "application/x-www-form-urlencoded; charset=UTF-8");
         myHeaders.append("origin", "null");
-        myHeaders.append("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36");
+        myHeaders.append("sec-ch-ua", "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"");
+        myHeaders.append("sec-ch-ua-mobile", "?0");
+        myHeaders.append("sec-ch-ua-platform", "\"macOS\"");
+        myHeaders.append("sec-fetch-dest", "empty");
+        myHeaders.append("sec-fetch-mode", "cors");
+        myHeaders.append("sec-fetch-site", "cross-site");
         var requestOptions = {
             method: 'GET',
             headers: myHeaders,
@@ -19,6 +26,6 @@
     </script>
 </head>
 <body>
-<div>Test page calling with user-agent headers</div>
+<div>Test page calling with all headers</div>
 </body>
 </html>
